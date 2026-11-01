@@ -4,6 +4,10 @@
  */
 package emadin.view;
 
+import javax.swing.UIManager;
+import javax.swing.*;
+import com.formdev.flatlaf.FlatLightLaf;
+
 /**
  *
  * @author user
@@ -17,8 +21,12 @@ public class FrameMain extends javax.swing.JFrame {
      */
     public FrameMain() {
         initComponents();
+        
+         
     }
 
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,24 +39,25 @@ public class FrameMain extends javax.swing.JFrame {
         ButtonSidebarGroup = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         pSideBar = new javax.swing.JPanel();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jToggleButton4 = new javax.swing.JToggleButton();
-        jToggleButton5 = new javax.swing.JToggleButton();
-        jToggleButton6 = new javax.swing.JToggleButton();
-        jToggleButton7 = new javax.swing.JToggleButton();
-        jToggleButton8 = new javax.swing.JToggleButton();
+        btnDashboard = new javax.swing.JToggleButton();
+        btnDataSantri = new javax.swing.JToggleButton();
+        btnDataKelas = new javax.swing.JToggleButton();
+        btnDataGuru = new javax.swing.JToggleButton();
+        btnIdCard = new javax.swing.JToggleButton();
+        btnJadwalKegiatan = new javax.swing.JToggleButton();
+        btnAbsensiSantri = new javax.swing.JToggleButton();
+        btnLaporan = new javax.swing.JToggleButton();
         jPanel4 = new javax.swing.JPanel();
-        jToggleButton9 = new javax.swing.JToggleButton();
-        jToggleButton10 = new javax.swing.JToggleButton();
+        btnPengaturan = new javax.swing.JToggleButton();
+        btnManajemenPengguna = new javax.swing.JToggleButton();
         jToggleButton11 = new javax.swing.JToggleButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         pTopBar = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -62,124 +71,134 @@ public class FrameMain extends javax.swing.JFrame {
         pSideBar.setBackground(new java.awt.Color(1, 87, 51));
         pSideBar.setPreferredSize(new java.awt.Dimension(220, 720));
 
-        jToggleButton1.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton1);
-        jToggleButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Dashboard.png"))); // NOI18N
-        jToggleButton1.setText("Dashboard");
-        jToggleButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton1.setIconTextGap(15);
-        jToggleButton1.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDashboard.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnDashboard);
+        btnDashboard.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnDashboard.setForeground(new java.awt.Color(255, 255, 255));
+        btnDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Dashboard.png"))); // NOI18N
+        btnDashboard.setText("Dashboard");
+        btnDashboard.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnDashboard.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnDashboard.setIconTextGap(15);
+        btnDashboard.setPreferredSize(new java.awt.Dimension(188, 34));
 
-        jToggleButton2.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton2);
-        jToggleButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Santri.png"))); // NOI18N
-        jToggleButton2.setText("Data Santri");
-        jToggleButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton2.setIconTextGap(15);
-        jToggleButton2.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDataSantri.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnDataSantri);
+        btnDataSantri.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnDataSantri.setForeground(new java.awt.Color(255, 255, 255));
+        btnDataSantri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Santri.png"))); // NOI18N
+        btnDataSantri.setText("Data Santri");
+        btnDataSantri.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnDataSantri.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnDataSantri.setIconTextGap(15);
+        btnDataSantri.setPreferredSize(new java.awt.Dimension(188, 34));
 
-        jToggleButton3.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton3);
-        jToggleButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Kelas.png"))); // NOI18N
-        jToggleButton3.setText("Data Kelas");
-        jToggleButton3.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton3.setIconTextGap(15);
-        jToggleButton3.setPreferredSize(new java.awt.Dimension(188, 34));
-        jToggleButton3.addActionListener(this::jToggleButton3ActionPerformed);
+        btnDataKelas.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnDataKelas);
+        btnDataKelas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnDataKelas.setForeground(new java.awt.Color(255, 255, 255));
+        btnDataKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Kelas.png"))); // NOI18N
+        btnDataKelas.setText("Data Kelas");
+        btnDataKelas.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnDataKelas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnDataKelas.setIconTextGap(15);
+        btnDataKelas.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDataKelas.addActionListener(this::btnDataKelasActionPerformed);
 
-        jToggleButton4.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton4);
-        jToggleButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Guru.png"))); // NOI18N
-        jToggleButton4.setText("Data Guru");
-        jToggleButton4.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton4.setIconTextGap(15);
-        jToggleButton4.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDataGuru.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnDataGuru);
+        btnDataGuru.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnDataGuru.setForeground(new java.awt.Color(255, 255, 255));
+        btnDataGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Guru.png"))); // NOI18N
+        btnDataGuru.setText("Data Guru");
+        btnDataGuru.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnDataGuru.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnDataGuru.setIconTextGap(15);
+        btnDataGuru.setPreferredSize(new java.awt.Dimension(188, 34));
 
-        jToggleButton5.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton5);
-        jToggleButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon ID Card Santri.png"))); // NOI18N
-        jToggleButton5.setText("ID Card Santri");
-        jToggleButton5.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton5.setIconTextGap(15);
-        jToggleButton5.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnIdCard.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnIdCard);
+        btnIdCard.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnIdCard.setForeground(new java.awt.Color(255, 255, 255));
+        btnIdCard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon ID Card Santri.png"))); // NOI18N
+        btnIdCard.setText("ID Card Santri");
+        btnIdCard.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnIdCard.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnIdCard.setIconTextGap(15);
+        btnIdCard.setPreferredSize(new java.awt.Dimension(188, 34));
 
-        jToggleButton6.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton6);
-        jToggleButton6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Jadwal Kegiatan.png"))); // NOI18N
-        jToggleButton6.setText("Jadwal Kegiatan");
-        jToggleButton6.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton6.setIconTextGap(15);
-        jToggleButton6.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnJadwalKegiatan.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnJadwalKegiatan);
+        btnJadwalKegiatan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnJadwalKegiatan.setForeground(new java.awt.Color(255, 255, 255));
+        btnJadwalKegiatan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Jadwal Kegiatan.png"))); // NOI18N
+        btnJadwalKegiatan.setText("Jadwal Kegiatan");
+        btnJadwalKegiatan.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnJadwalKegiatan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnJadwalKegiatan.setIconTextGap(15);
+        btnJadwalKegiatan.setPreferredSize(new java.awt.Dimension(188, 34));
 
-        jToggleButton7.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton7);
-        jToggleButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Absensi Santri.png"))); // NOI18N
-        jToggleButton7.setText("Absensi Santri");
-        jToggleButton7.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton7.setIconTextGap(15);
-        jToggleButton7.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnAbsensiSantri.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnAbsensiSantri);
+        btnAbsensiSantri.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAbsensiSantri.setForeground(new java.awt.Color(255, 255, 255));
+        btnAbsensiSantri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Absensi Santri.png"))); // NOI18N
+        btnAbsensiSantri.setText("Absensi Santri");
+        btnAbsensiSantri.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnAbsensiSantri.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnAbsensiSantri.setIconTextGap(15);
+        btnAbsensiSantri.setPreferredSize(new java.awt.Dimension(188, 34));
 
-        jToggleButton8.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton8);
-        jToggleButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Laporan.png"))); // NOI18N
-        jToggleButton8.setText("Laporan");
-        jToggleButton8.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton8.setIconTextGap(15);
-        jToggleButton8.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnLaporan.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnLaporan);
+        btnLaporan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnLaporan.setForeground(new java.awt.Color(255, 255, 255));
+        btnLaporan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Laporan.png"))); // NOI18N
+        btnLaporan.setText("Laporan");
+        btnLaporan.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnLaporan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnLaporan.setIconTextGap(15);
+        btnLaporan.setPreferredSize(new java.awt.Dimension(188, 34));
 
         jPanel4.setBackground(new java.awt.Color(1, 87, 51));
         jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(255, 255, 255)));
 
-        jToggleButton9.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton9);
-        jToggleButton9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Pengaturan.png"))); // NOI18N
-        jToggleButton9.setText("Laporan");
-        jToggleButton9.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton9.setIconTextGap(15);
-        jToggleButton9.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnPengaturan.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnPengaturan);
+        btnPengaturan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnPengaturan.setForeground(new java.awt.Color(255, 255, 255));
+        btnPengaturan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Pengaturan.png"))); // NOI18N
+        btnPengaturan.setText("Pengaturan");
+        btnPengaturan.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnPengaturan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnPengaturan.setIconTextGap(15);
+        btnPengaturan.setPreferredSize(new java.awt.Dimension(188, 34));
 
-        jToggleButton10.setBackground(new java.awt.Color(1, 87, 51));
-        ButtonSidebarGroup.add(jToggleButton10);
-        jToggleButton10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jToggleButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Manajemen Pengguna.png"))); // NOI18N
-        jToggleButton10.setText("Manajemen Pengguna");
-        jToggleButton10.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jToggleButton10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jToggleButton10.setIconTextGap(15);
-        jToggleButton10.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnManajemenPengguna.setBackground(new java.awt.Color(1, 87, 51));
+        ButtonSidebarGroup.add(btnManajemenPengguna);
+        btnManajemenPengguna.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnManajemenPengguna.setForeground(new java.awt.Color(255, 255, 255));
+        btnManajemenPengguna.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Manajemen Pengguna.png"))); // NOI18N
+        btnManajemenPengguna.setText("Manajemen Pengguna");
+        btnManajemenPengguna.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
+        btnManajemenPengguna.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnManajemenPengguna.setIconTextGap(15);
+        btnManajemenPengguna.setPreferredSize(new java.awt.Dimension(188, 34));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToggleButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jToggleButton9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnManajemenPengguna, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnPengaturan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jToggleButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnManajemenPengguna, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnPengaturan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(28, Short.MAX_VALUE))
         );
 
@@ -196,11 +215,15 @@ public class FrameMain extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(37, 111, 80));
         jPanel5.setPreferredSize(new java.awt.Dimension(188, 59));
 
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("TAHUN AJARAN");
         jLabel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
 
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("2026/2027");
         jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
 
@@ -225,74 +248,91 @@ public class FrameMain extends javax.swing.JFrame {
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel3.setText("E-MADIN");
+        jPanel6.setBackground(new java.awt.Color(1, 87, 51));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jLabel4.setText("Madrasah Roudlotuth Tholibath");
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Logo E Madin.png"))); // NOI18N
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Logo E Madin.png"))); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("E-MADIN");
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Madrasah Roudlotuth Tholibath");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(5, 5, 5)
+                        .addComponent(jLabel8))
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout pSideBarLayout = new javax.swing.GroupLayout(pSideBar);
         pSideBar.setLayout(pSideBarLayout);
         pSideBarLayout.setHorizontalGroup(
             pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pSideBarLayout.createSequentialGroup()
-                .addGroup(pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(pSideBarLayout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(pSideBarLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGap(15, 15, 15)
+                .addGroup(pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(btnDashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnDataSantri, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnDataKelas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnDataGuru, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnIdCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnJadwalKegiatan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnAbsensiSantri, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnLaporan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jToggleButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(17, Short.MAX_VALUE))
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         pSideBarLayout.setVerticalGroup(
             pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pSideBarLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(pSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pSideBarLayout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(5, 5, 5)
-                        .addComponent(jLabel4))
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnDashboard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDataSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDataKelas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDataGuru, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnIdCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnJadwalKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAbsensiSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(3, 3, 3)
-                .addComponent(jToggleButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnLaporan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jToggleButton11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -363,11 +403,12 @@ public class FrameMain extends javax.swing.JFrame {
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
+    private void btnDataKelasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataKelasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton3ActionPerformed
+    }//GEN-LAST:event_btnDataKelasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -379,14 +420,8 @@ public class FrameMain extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        } catch (UnsupportedLookAndFeelException unsupportedLookAndFeelException) {
         }
         //</editor-fold>
 
@@ -396,29 +431,30 @@ public class FrameMain extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup ButtonSidebarGroup;
+    private javax.swing.JToggleButton btnAbsensiSantri;
+    private javax.swing.JToggleButton btnDashboard;
+    private javax.swing.JToggleButton btnDataGuru;
+    private javax.swing.JToggleButton btnDataKelas;
+    private javax.swing.JToggleButton btnDataSantri;
+    private javax.swing.JToggleButton btnIdCard;
+    private javax.swing.JToggleButton btnJadwalKegiatan;
+    private javax.swing.JToggleButton btnLaporan;
+    private javax.swing.JToggleButton btnManajemenPengguna;
+    private javax.swing.JToggleButton btnPengaturan;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton10;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JToggleButton jToggleButton11;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3;
-    private javax.swing.JToggleButton jToggleButton4;
-    private javax.swing.JToggleButton jToggleButton5;
-    private javax.swing.JToggleButton jToggleButton6;
-    private javax.swing.JToggleButton jToggleButton7;
-    private javax.swing.JToggleButton jToggleButton8;
-    private javax.swing.JToggleButton jToggleButton9;
     private javax.swing.JPanel pSideBar;
     private javax.swing.JPanel pTopBar;
     // End of variables declaration//GEN-END:variables
