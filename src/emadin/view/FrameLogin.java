@@ -31,6 +31,13 @@ public class FrameLogin extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -38,15 +45,43 @@ public class FrameLogin extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setText("Madrasah Roudlotuth Tholibath");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 260, -1));
+        jLabel3.setForeground(new java.awt.Color(107, 114, 128));
+        jLabel3.setText("Madrasah Roudlotut Tholibat");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 676, 260, 20));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Logo E Madin.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(50, 50));
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Login E-Madin BG.png"))); // NOI18N
+        jTextField1.setText("Username");
+        jTextField1.setBorder(null);
+        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 290, 290, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/loginUsername.png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 280, 410, -1));
+
+        jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setBorder(null);
+        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 390, 280, 30));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/MataLogin.png"))); // NOI18N
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 390, 20, 30));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/loginPaswword.png"))); // NOI18N
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 380, -1, -1));
+
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Madrasah Roudlotut Tholibat");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 260, -1));
+
+        jButton1.setBackground(new java.awt.Color(1, 87, 51));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Masuk");
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 490, 400, 50));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/framelogin.png"))); // NOI18N
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -81,9 +116,16 @@ public class FrameLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
