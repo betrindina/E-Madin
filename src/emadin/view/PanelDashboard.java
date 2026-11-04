@@ -26,6 +26,7 @@ public class PanelDashboard extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel28 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
@@ -56,9 +57,50 @@ public class PanelDashboard extends javax.swing.JPanel {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
+        jPanel13 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jPanel21 = new javax.swing.JPanel();
+        jProgressBar1 = new javax.swing.JProgressBar();
+        jProgressBar2 = new javax.swing.JProgressBar();
+        jProgressBar3 = new javax.swing.JProgressBar();
+        jProgressBar4 = new javax.swing.JProgressBar();
+        jPanel20 = new javax.swing.JPanel();
+        jProgressBar5 = new javax.swing.JProgressBar();
+        jProgressBar6 = new javax.swing.JProgressBar();
+        jProgressBar7 = new javax.swing.JProgressBar();
+        jProgressBar8 = new javax.swing.JProgressBar();
+        jPanel19 = new javax.swing.JPanel();
+        jProgressBar9 = new javax.swing.JProgressBar();
+        jProgressBar11 = new javax.swing.JProgressBar();
+        jProgressBar10 = new javax.swing.JProgressBar();
+        jProgressBar12 = new javax.swing.JProgressBar();
+        jPanel18 = new javax.swing.JPanel();
+        jProgressBar13 = new javax.swing.JProgressBar();
+        jProgressBar15 = new javax.swing.JProgressBar();
+        jProgressBar16 = new javax.swing.JProgressBar();
+        jProgressBar14 = new javax.swing.JProgressBar();
+        jPanel17 = new javax.swing.JPanel();
+        jProgressBar17 = new javax.swing.JProgressBar();
+        jProgressBar20 = new javax.swing.JProgressBar();
+        jProgressBar19 = new javax.swing.JProgressBar();
+        jProgressBar18 = new javax.swing.JProgressBar();
+        jPanel16 = new javax.swing.JPanel();
+        jProgressBar21 = new javax.swing.JProgressBar();
+        jProgressBar23 = new javax.swing.JProgressBar();
+        jProgressBar24 = new javax.swing.JProgressBar();
+        jProgressBar22 = new javax.swing.JProgressBar();
+
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel28.setText("Rabu");
+        jLabel28.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 50, 1, 1));
 
         setLayout(new java.awt.BorderLayout());
 
@@ -104,7 +146,7 @@ public class PanelDashboard extends javax.swing.JPanel {
                             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, 0)
-                        .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE))
+                        .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(342, 342, 342)
                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -167,7 +209,7 @@ public class PanelDashboard extends javax.swing.JPanel {
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addContainerGap())
         );
@@ -217,7 +259,7 @@ public class PanelDashboard extends javax.swing.JPanel {
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addContainerGap())
         );
@@ -267,7 +309,7 @@ public class PanelDashboard extends javax.swing.JPanel {
                     .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel12)
                 .addContainerGap())
         );
@@ -317,7 +359,7 @@ public class PanelDashboard extends javax.swing.JPanel {
                     .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel16)
                 .addContainerGap())
         );
@@ -341,44 +383,215 @@ public class PanelDashboard extends javax.swing.JPanel {
 
         jPanel9.setBackground(new java.awt.Color(248, 250, 247));
         jPanel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 0, 0, 0));
-        jPanel9.setLayout(new java.awt.BorderLayout());
+        jPanel9.setLayout(new java.awt.BorderLayout(15, 0));
+
+        jPanel13.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel13.setPreferredSize(new java.awt.Dimension(430, 336));
+
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel24.setText("Jadwal Dan Kegiatan");
+        jLabel24.setBorder(javax.swing.BorderFactory.createEmptyBorder(15, 15, 1, 1));
+
+        jButton1.setBackground(new java.awt.Color(1, 87, 51));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Mulai Scan.png"))); // NOI18N
+        jButton1.setText("Mulai Scan");
+        jButton1.setIconTextGap(10);
+        jButton1.setPreferredSize(new java.awt.Dimension(138, 42));
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 246, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addComponent(jLabel24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 242, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
+        );
+
+        jPanel9.add(jPanel13, java.awt.BorderLayout.LINE_END);
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.setPreferredSize(new java.awt.Dimension(566, 336));
+        jPanel10.setLayout(new java.awt.BorderLayout());
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 566, Short.MAX_VALUE)
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel11.setPreferredSize(new java.awt.Dimension(585, 80));
+
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel22.setText("Statistik Kehadiran");
+        jLabel22.setBorder(javax.swing.BorderFactory.createEmptyBorder(15, 15, 1, 1));
+
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel23.setText("Rekap Absensi Santri Minggu Ini");
+        jLabel23.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 15, 1, 1));
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 336, Short.MAX_VALUE)
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addComponent(jLabel22)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel23)
+                .addGap(0, 27, Short.MAX_VALUE))
         );
 
-        jPanel9.add(jPanel10, java.awt.BorderLayout.LINE_START);
-
-        jPanel11.setBackground(new java.awt.Color(248, 250, 247));
-        jPanel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 0));
-        jPanel11.setLayout(new java.awt.BorderLayout());
+        jPanel10.add(jPanel11, java.awt.BorderLayout.PAGE_START);
 
         jPanel12.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel12.setLayout(new java.awt.BorderLayout(0, 10));
 
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 454, Short.MAX_VALUE)
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 20, 1, 20));
+        jPanel14.setPreferredSize(new java.awt.Dimension(585, 60));
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 545, Short.MAX_VALUE)
         );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 336, Short.MAX_VALUE)
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 58, Short.MAX_VALUE)
         );
 
-        jPanel11.add(jPanel12, java.awt.BorderLayout.CENTER);
+        jPanel12.add(jPanel14, java.awt.BorderLayout.PAGE_END);
 
-        jPanel9.add(jPanel11, java.awt.BorderLayout.CENTER);
+        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 1, 20));
+        jPanel15.setLayout(new java.awt.GridLayout(1, 6, 30, 0));
+
+        jPanel21.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel21.setLayout(new java.awt.GridLayout(1, 4, 10, 0));
+
+        jProgressBar1.setBackground(new java.awt.Color(1, 87, 51));
+        jPanel21.add(jProgressBar1);
+
+        jProgressBar2.setBackground(new java.awt.Color(245, 158, 11));
+        jPanel21.add(jProgressBar2);
+
+        jProgressBar3.setBackground(new java.awt.Color(22, 163, 74));
+        jPanel21.add(jProgressBar3);
+
+        jProgressBar4.setBackground(new java.awt.Color(255, 56, 60));
+        jPanel21.add(jProgressBar4);
+
+        jPanel15.add(jPanel21);
+
+        jPanel20.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel20.setLayout(new java.awt.GridLayout(1, 4, 10, 0));
+
+        jProgressBar5.setBackground(new java.awt.Color(1, 87, 51));
+        jPanel20.add(jProgressBar5);
+
+        jProgressBar6.setBackground(new java.awt.Color(245, 158, 11));
+        jPanel20.add(jProgressBar6);
+
+        jProgressBar7.setBackground(new java.awt.Color(22, 163, 74));
+        jPanel20.add(jProgressBar7);
+
+        jProgressBar8.setBackground(new java.awt.Color(255, 56, 60));
+        jPanel20.add(jProgressBar8);
+
+        jPanel15.add(jPanel20);
+
+        jPanel19.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel19.setLayout(new java.awt.GridLayout(1, 4, 10, 0));
+
+        jProgressBar9.setBackground(new java.awt.Color(1, 87, 51));
+        jPanel19.add(jProgressBar9);
+
+        jProgressBar11.setBackground(new java.awt.Color(245, 158, 11));
+        jPanel19.add(jProgressBar11);
+
+        jProgressBar10.setBackground(new java.awt.Color(22, 163, 74));
+        jPanel19.add(jProgressBar10);
+
+        jProgressBar12.setBackground(new java.awt.Color(255, 56, 60));
+        jPanel19.add(jProgressBar12);
+
+        jPanel15.add(jPanel19);
+
+        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel18.setLayout(new java.awt.GridLayout(1, 4, 10, 0));
+
+        jProgressBar13.setBackground(new java.awt.Color(1, 87, 51));
+        jPanel18.add(jProgressBar13);
+
+        jProgressBar15.setBackground(new java.awt.Color(245, 158, 11));
+        jPanel18.add(jProgressBar15);
+
+        jProgressBar16.setBackground(new java.awt.Color(22, 163, 74));
+        jPanel18.add(jProgressBar16);
+
+        jProgressBar14.setBackground(new java.awt.Color(255, 56, 60));
+        jPanel18.add(jProgressBar14);
+
+        jPanel15.add(jPanel18);
+
+        jPanel17.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel17.setLayout(new java.awt.GridLayout(1, 4, 10, 0));
+
+        jProgressBar17.setBackground(new java.awt.Color(1, 87, 51));
+        jPanel17.add(jProgressBar17);
+
+        jProgressBar20.setBackground(new java.awt.Color(245, 158, 11));
+        jPanel17.add(jProgressBar20);
+
+        jProgressBar19.setBackground(new java.awt.Color(22, 163, 74));
+        jPanel17.add(jProgressBar19);
+
+        jProgressBar18.setBackground(new java.awt.Color(255, 56, 60));
+        jPanel17.add(jProgressBar18);
+
+        jPanel15.add(jPanel17);
+
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel16.setLayout(new java.awt.GridLayout(1, 4, 10, 0));
+
+        jProgressBar21.setBackground(new java.awt.Color(1, 87, 51));
+        jPanel16.add(jProgressBar21);
+
+        jProgressBar23.setBackground(new java.awt.Color(245, 158, 11));
+        jPanel16.add(jProgressBar23);
+
+        jProgressBar24.setBackground(new java.awt.Color(22, 163, 74));
+        jPanel16.add(jProgressBar24);
+
+        jProgressBar22.setBackground(new java.awt.Color(255, 56, 60));
+        jPanel16.add(jProgressBar22);
+
+        jPanel15.add(jPanel16);
+
+        jPanel12.add(jPanel15, java.awt.BorderLayout.CENTER);
+
+        jPanel10.add(jPanel12, java.awt.BorderLayout.CENTER);
+
+        jPanel9.add(jPanel10, java.awt.BorderLayout.CENTER);
 
         jPanel3.add(jPanel9, java.awt.BorderLayout.CENTER);
 
@@ -389,6 +602,7 @@ public class PanelDashboard extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -403,6 +617,10 @@ public class PanelDashboard extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -414,7 +632,16 @@ public class PanelDashboard extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -422,5 +649,29 @@ public class PanelDashboard extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JProgressBar jProgressBar10;
+    private javax.swing.JProgressBar jProgressBar11;
+    private javax.swing.JProgressBar jProgressBar12;
+    private javax.swing.JProgressBar jProgressBar13;
+    private javax.swing.JProgressBar jProgressBar14;
+    private javax.swing.JProgressBar jProgressBar15;
+    private javax.swing.JProgressBar jProgressBar16;
+    private javax.swing.JProgressBar jProgressBar17;
+    private javax.swing.JProgressBar jProgressBar18;
+    private javax.swing.JProgressBar jProgressBar19;
+    private javax.swing.JProgressBar jProgressBar2;
+    private javax.swing.JProgressBar jProgressBar20;
+    private javax.swing.JProgressBar jProgressBar21;
+    private javax.swing.JProgressBar jProgressBar22;
+    private javax.swing.JProgressBar jProgressBar23;
+    private javax.swing.JProgressBar jProgressBar24;
+    private javax.swing.JProgressBar jProgressBar3;
+    private javax.swing.JProgressBar jProgressBar4;
+    private javax.swing.JProgressBar jProgressBar5;
+    private javax.swing.JProgressBar jProgressBar6;
+    private javax.swing.JProgressBar jProgressBar7;
+    private javax.swing.JProgressBar jProgressBar8;
+    private javax.swing.JProgressBar jProgressBar9;
     // End of variables declaration//GEN-END:variables
 }
