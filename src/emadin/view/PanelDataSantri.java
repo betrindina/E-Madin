@@ -38,27 +38,48 @@ public class PanelDataSantri extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel13 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jPanel14 = new javax.swing.JPanel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
 
         setMaximumSize(new java.awt.Dimension(1060, 648));
         setMinimumSize(new java.awt.Dimension(1060, 648));
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setBackground(new java.awt.Color(240, 253, 244));
         jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 48, 1, 48));
         jPanel1.setMaximumSize(new java.awt.Dimension(1060, 96));
         jPanel1.setMinimumSize(new java.awt.Dimension(1060, 96));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
+        jPanel8.setBackground(new java.awt.Color(240, 253, 244));
         jPanel8.setMinimumSize(new java.awt.Dimension(136, 96));
         jPanel8.setPreferredSize(new java.awt.Dimension(136, 96));
         jPanel8.setLayout(new java.awt.BorderLayout());
 
+        jLabel1.setBackground(new java.awt.Color(240, 253, 244));
         jLabel1.setMaximumSize(new java.awt.Dimension(37, 27));
         jLabel1.setMinimumSize(new java.awt.Dimension(37, 27));
         jLabel1.setPreferredSize(new java.awt.Dimension(37, 27));
         jPanel8.add(jLabel1, java.awt.BorderLayout.PAGE_END);
 
+        jLabel2.setBackground(new java.awt.Color(240, 253, 244));
         jLabel2.setMaximumSize(new java.awt.Dimension(37, 33));
         jLabel2.setMinimumSize(new java.awt.Dimension(37, 33));
         jLabel2.setPreferredSize(new java.awt.Dimension(37, 33));
@@ -70,12 +91,15 @@ public class PanelDataSantri extends javax.swing.JPanel {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/tambahSantri.png"))); // NOI18N
         jButton2.setText("Tambah Santri");
         jButton2.setIconTextGap(10);
+        jButton2.addActionListener(this::jButton2ActionPerformed);
         jPanel8.add(jButton2, java.awt.BorderLayout.CENTER);
 
         jPanel1.add(jPanel8, java.awt.BorderLayout.LINE_END);
 
+        jPanel9.setBackground(new java.awt.Color(240, 253, 244));
         jPanel9.setLayout(new java.awt.BorderLayout());
 
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/tulisanDataSantri.png"))); // NOI18N
         jPanel9.add(jLabel4, java.awt.BorderLayout.CENTER);
 
@@ -83,6 +107,7 @@ public class PanelDataSantri extends javax.swing.JPanel {
 
         add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
+        jPanel2.setBackground(new java.awt.Color(240, 253, 244));
         jPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 48, 1, 1));
         jPanel2.setMaximumSize(new java.awt.Dimension(1060, 80));
         jPanel2.setMinimumSize(new java.awt.Dimension(1060, 80));
@@ -105,6 +130,7 @@ public class PanelDataSantri extends javax.swing.JPanel {
 
         add(jPanel2, java.awt.BorderLayout.PAGE_END);
 
+        jPanel3.setBackground(new java.awt.Color(240, 253, 244));
         jPanel3.setMaximumSize(new java.awt.Dimension(48, 472));
         jPanel3.setMinimumSize(new java.awt.Dimension(48, 472));
 
@@ -121,6 +147,7 @@ public class PanelDataSantri extends javax.swing.JPanel {
 
         add(jPanel3, java.awt.BorderLayout.LINE_END);
 
+        jPanel4.setBackground(new java.awt.Color(240, 253, 244));
         jPanel4.setMaximumSize(new java.awt.Dimension(48, 472));
         jPanel4.setMinimumSize(new java.awt.Dimension(48, 472));
 
@@ -137,9 +164,109 @@ public class PanelDataSantri extends javax.swing.JPanel {
 
         add(jPanel4, java.awt.BorderLayout.LINE_START);
 
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 16, 16, 16));
         jPanel5.setLayout(new java.awt.BorderLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.setMinimumSize(new java.awt.Dimension(964, 70));
+        jPanel6.setPreferredSize(new java.awt.Dimension(964, 70));
+        jPanel6.setLayout(new java.awt.BorderLayout());
+
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setMaximumSize(new java.awt.Dimension(964, 16));
+        jLabel5.setMinimumSize(new java.awt.Dimension(964, 16));
+        jLabel5.setName(""); // NOI18N
+        jLabel5.setPreferredSize(new java.awt.Dimension(16, 16));
+        jPanel6.add(jLabel5, java.awt.BorderLayout.PAGE_END);
+
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel6.setMaximumSize(new java.awt.Dimension(964, 17));
+        jLabel6.setMinimumSize(new java.awt.Dimension(964, 17));
+        jLabel6.setPreferredSize(new java.awt.Dimension(37, 17));
+        jPanel6.add(jLabel6, java.awt.BorderLayout.PAGE_START);
+
+        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setMinimumSize(new java.awt.Dimension(964, 37));
+        jPanel10.setLayout(new java.awt.BorderLayout());
+
+        jPanel11.setMinimumSize(new java.awt.Dimension(655, 37));
+        jPanel11.setPreferredSize(new java.awt.Dimension(655, 37));
+        jPanel11.setLayout(new java.awt.BorderLayout());
+
+        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        jPanel12.setMinimumSize(new java.awt.Dimension(320, 37));
+        jPanel12.setPreferredSize(new java.awt.Dimension(320, 37));
+        jPanel12.setLayout(new java.awt.BorderLayout());
+
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/cari.png"))); // NOI18N
+        jLabel9.setMaximumSize(new java.awt.Dimension(30, 16));
+        jLabel9.setMinimumSize(new java.awt.Dimension(30, 16));
+        jLabel9.setPreferredSize(new java.awt.Dimension(30, 16));
+        jPanel12.add(jLabel9, java.awt.BorderLayout.LINE_START);
+
+        jTextField1.setEditable(false);
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField1.setForeground(new java.awt.Color(107, 114, 128));
+        jTextField1.setText("Cari nama atau NIS santri");
+        jTextField1.setBorder(null);
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        jPanel12.add(jTextField1, java.awt.BorderLayout.CENTER);
+
+        jPanel11.add(jPanel12, java.awt.BorderLayout.LINE_START);
+
+        jPanel13.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel13.setPreferredSize(new java.awt.Dimension(155, 37));
+        jPanel13.setLayout(new java.awt.BorderLayout());
+
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setMaximumSize(new java.awt.Dimension(13, 16));
+        jLabel7.setMinimumSize(new java.awt.Dimension(13, 16));
+        jLabel7.setPreferredSize(new java.awt.Dimension(13, 16));
+        jPanel13.add(jLabel7, java.awt.BorderLayout.LINE_END);
+
+        jLabel8.setMaximumSize(new java.awt.Dimension(13, 16));
+        jLabel8.setMinimumSize(new java.awt.Dimension(13, 16));
+        jLabel8.setPreferredSize(new java.awt.Dimension(13, 16));
+        jPanel13.add(jLabel8, java.awt.BorderLayout.LINE_START);
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel13.add(jComboBox2, java.awt.BorderLayout.CENTER);
+
+        jPanel11.add(jPanel13, java.awt.BorderLayout.CENTER);
+
+        jPanel14.setPreferredSize(new java.awt.Dimension(155, 37));
+        jPanel14.setLayout(new java.awt.BorderLayout());
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel14.add(jComboBox1, java.awt.BorderLayout.CENTER);
+
+        jPanel11.add(jPanel14, java.awt.BorderLayout.LINE_END);
+
+        jPanel10.add(jPanel11, java.awt.BorderLayout.LINE_START);
+
+        jPanel15.setBackground(new java.awt.Color(231, 242, 233));
+        jPanel15.setMinimumSize(new java.awt.Dimension(85, 37));
+        jPanel15.setPreferredSize(new java.awt.Dimension(85, 37));
+        jPanel15.setLayout(new java.awt.BorderLayout());
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("222 Santri");
+        jPanel15.add(jLabel10, java.awt.BorderLayout.CENTER);
+
+        jPanel10.add(jPanel15, java.awt.BorderLayout.LINE_END);
+
+        jPanel6.add(jPanel10, java.awt.BorderLayout.CENTER);
+
+        jPanel5.add(jPanel6, java.awt.BorderLayout.PAGE_START);
+
+        jPanel7.setLayout(new java.awt.BorderLayout());
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -150,28 +277,55 @@ public class PanelDataSantri extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane2.setViewportView(jTable2);
 
-        jPanel5.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        jPanel7.add(jScrollPane2, java.awt.BorderLayout.CENTER);
+
+        jPanel5.add(jPanel7, java.awt.BorderLayout.CENTER);
 
         add(jPanel5, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
