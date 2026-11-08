@@ -8,6 +8,7 @@ import com.github.sarxos.webcam.Webcam;
 import com.github.sarxos.webcam.WebcamPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 public class PanelAbsensiQR extends javax.swing.JPanel {
 
@@ -16,14 +17,19 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
      */
     public PanelAbsensiQR() {
         initComponents();
-        // Layout panel kamera
+
+        lStatusCamera.setText("Kamera Nonaktif");
         pCamera.setLayout(new BorderLayout());
 
-        // Kondisi awal kamera
-        bCamera.setSelected(false);
-        bCamera.setText("Aktifkan Kamera");
-        bCamera.setBackground(new Color(0, 100, 55));
+        // Tombol konsisten warna hijau (#015733) dengan teks putih
+        bCamera.setOpaque(true);
+        bCamera.setContentAreaFilled(true);
+        bCamera.setBorderPainted(false);
+        bCamera.setBackground(new Color(1, 87, 51)); // #015733
+        bCamera.setForeground(Color.WHITE);
 
+        // Kondisi awal kamera mati
+        bCamera.setText("Aktifkan Kamera");
         lStatusCamera.setText("Kamera Nonaktif");
         lStatusCamera.setForeground(Color.RED);
     }
@@ -66,11 +72,10 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
         jPanel5 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        pCamera = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        bCamera = new javax.swing.JToggleButton();
         lStatusCamera = new javax.swing.JLabel();
+        pCamera = new javax.swing.JLabel();
+        bCamera = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
@@ -322,28 +327,17 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
 
         jPanel13.setBackground(new java.awt.Color(255, 255, 255));
 
-        pCamera.setBackground(new java.awt.Color(231, 242, 233));
-        pCamera.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(154, 188, 159)));
-        pCamera.setPreferredSize(new java.awt.Dimension(150, 150));
-
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Preview QR ID Card — Visual.png"))); // NOI18N
-        jLabel18.setPreferredSize(new java.awt.Dimension(90, 90));
-
-        javax.swing.GroupLayout pCameraLayout = new javax.swing.GroupLayout(pCamera);
-        pCamera.setLayout(pCameraLayout);
-        pCameraLayout.setHorizontalGroup(
-            pCameraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-        );
-        pCameraLayout.setVerticalGroup(
-            pCameraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-        );
-
         jLabel19.setForeground(new java.awt.Color(0, 54, 32));
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setText("Arahkan QR ID Card ke kamera");
+
+        lStatusCamera.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lStatusCamera.setText("jLabel20");
+        lStatusCamera.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(154, 188, 159)));
+
+        pCamera.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pCamera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Camera attendance viewport.png"))); // NOI18N
+        pCamera.setPreferredSize(new java.awt.Dimension(150, 150));
 
         bCamera.setBackground(new java.awt.Color(1, 87, 51));
         bCamera.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -351,18 +345,10 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
         bCamera.setText("Aktifkan Kamera");
         bCamera.addActionListener(this::bCameraActionPerformed);
 
-        lStatusCamera.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lStatusCamera.setText("jLabel20");
-        lStatusCamera.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(154, 188, 159)));
-
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
-                .addContainerGap(111, Short.MAX_VALUE)
-                .addComponent(pCamera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(109, 109, 109))
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -370,20 +356,24 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
                     .addGroup(jPanel13Layout.createSequentialGroup()
                         .addComponent(bCamera, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lStatusCamera, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(lStatusCamera, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pCamera, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(104, 104, 104))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(pCamera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(24, 24, 24)
+                .addComponent(pCamera, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel19)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bCamera, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                    .addComponent(lStatusCamera, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lStatusCamera, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                    .addComponent(bCamera, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -497,9 +487,9 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
 
     private void bCameraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCameraActionPerformed
         // TODO add your handling code here:
-        if (bCamera.isSelected()) {
-
-            // Mengambil kamera default
+        String statusText = bCamera.getText();
+        if (statusText.equals("Aktifkan Kamera")) {
+            // --- AKTIFKAN KAMERA ---
             webcam = Webcam.getDefault();
 
             if (webcam == null) {
@@ -507,44 +497,37 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
                         this,
                         "Kamera tidak ditemukan!"
                 );
-
-                bCamera.setSelected(false);
                 return;
             }
 
-            // Membuka kamera
             webcam.open();
 
-            // Menampilkan kamera pada pCamera
             webcamPanel = new WebcamPanel(webcam);
             webcamPanel.setFPSDisplayed(true);
+            webcamPanel.setMirrored(true); // Agar tidak mirror
 
             pCamera.removeAll();
             pCamera.add(webcamPanel, BorderLayout.CENTER);
 
-            // Mengubah tombol menjadi hijau
+            // Ubah teks tombol jadi "Nonaktifkan Kamera" (warna latar tetap hijau)
             bCamera.setText("Nonaktifkan Kamera");
-            bCamera.setBackground(new Color(0, 100, 55));
 
-            // Mengubah status
+            // Ubah status teks di samping jadi hijau aktif
             lStatusCamera.setText("Kamera Aktif");
             lStatusCamera.setForeground(new Color(0, 153, 0));
 
         } else {
-
-            // Menghentikan kamera
+            // --- MATIKAN / NONAKTIFKAN KAMERA ---
             if (webcam != null && webcam.isOpen()) {
                 webcam.close();
             }
 
-            // Menghapus tampilan kamera
             pCamera.removeAll();
 
-            // Mengubah tombol menjadi merah
+            // Ubah teks tombol kembali jadi "Aktifkan Kamera"
             bCamera.setText("Aktifkan Kamera");
-            bCamera.setBackground(Color.RED);
 
-            // Mengubah status
+            // Ubah status teks di samping jadi merah nonaktif
             lStatusCamera.setText("Kamera Nonaktif");
             lStatusCamera.setForeground(Color.RED);
         }
@@ -556,7 +539,7 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
     private WebcamPanel webcamPanel;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton bCamera;
+    private javax.swing.JButton bCamera;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -566,7 +549,6 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
@@ -600,6 +582,6 @@ public class PanelAbsensiQR extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel lStatusCamera;
-    private javax.swing.JPanel pCamera;
+    private javax.swing.JLabel pCamera;
     // End of variables declaration//GEN-END:variables
 }
