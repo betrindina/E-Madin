@@ -28,7 +28,7 @@ public class FrameMain extends javax.swing.JFrame {
 PanelDashboard dashboard = new PanelDashboard();
 PanelDataSantri dataSantri = new PanelDataSantri();
 PanelAbsensiSantri absensiSantri = new PanelAbsensiSantri();
-PanelDataDosen dataguru = new PanelDataDosen();
+PanelDataGuru dataguru = new PanelDataGuru();
 
 // Memasukkan panel ke pContent
 pContent.add(dashboard, "dashboard");
