@@ -29,12 +29,14 @@ PanelDashboard dashboard = new PanelDashboard();
 PanelDataSantri dataSantri = new PanelDataSantri();
 PanelAbsensiSantri absensiSantri = new PanelAbsensiSantri();
 PanelDataDosen dataguru = new PanelDataDosen();
+PanelJadwalKegiatan jadwalKegiatan = new PanelJadwalKegiatan();
 
 // Memasukkan panel ke pContent
 pContent.add(dashboard, "dashboard");
 pContent.add(dataSantri, "santri");
 pContent.add(absensiSantri, "absensiSantri");
 pContent.add(dataguru, "dataguru");
+pContent.add(jadwalKegiatan,"jadwalKegiatan");
 
 // Tampilan awal
 tampilPanel("dashboard");
@@ -164,6 +166,7 @@ tampilPanel("dashboard");
         btnJadwalKegiatan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnJadwalKegiatan.setIconTextGap(15);
         btnJadwalKegiatan.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnJadwalKegiatan.addActionListener(this::btnJadwalKegiatanActionPerformed);
 
         btnAbsensiSantri.setBackground(new java.awt.Color(1, 87, 51));
         ButtonSidebarGroup.add(btnAbsensiSantri);
@@ -458,6 +461,11 @@ tampilPanel("dashboard");
         // TODO add your handling code here:
         tampilPanel("dataguru");
     }//GEN-LAST:event_btnDataGuruActionPerformed
+
+    private void btnJadwalKegiatanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJadwalKegiatanActionPerformed
+        // TODO add your handling code here:
+        tampilPanel("jadwalKegiatan");
+    }//GEN-LAST:event_btnJadwalKegiatanActionPerformed
 
     /**
      * @param args the command line arguments
