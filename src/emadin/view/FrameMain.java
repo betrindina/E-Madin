@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package emadin.view;
 
 import javax.swing.UIManager;
@@ -9,10 +5,6 @@ import javax.swing.*;
 import com.formdev.flatlaf.FlatLightLaf;
 import java.awt.CardLayout;
 
-/**
- *
- * @author user
- */
 public class FrameMain extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameMain.class.getName());
@@ -28,16 +20,15 @@ public class FrameMain extends javax.swing.JFrame {
 PanelDashboard dashboard = new PanelDashboard();
 PanelDataSantri dataSantri = new PanelDataSantri();
 PanelAbsensiSantri absensiSantri = new PanelAbsensiSantri();
-PanelDataDosen dataguru = new PanelDataDosen();
-PanelJadwalKegiatan jadwalKegiatan = new PanelJadwalKegiatan();
+PanelDataGuru dataguru = new PanelDataGuru();
+PanelDataKelas dataKelas = new PanelDataKelas();
 
 // Memasukkan panel ke pContent
 pContent.add(dashboard, "dashboard");
 pContent.add(dataSantri, "santri");
 pContent.add(absensiSantri, "absensiSantri");
 pContent.add(dataguru, "dataguru");
-pContent.add(jadwalKegiatan,"jadwalKegiatan");
-
+pContent.add(dataKelas, "kelas");
 // Tampilan awal
 tampilPanel("dashboard");
     }
@@ -439,7 +430,7 @@ tampilPanel("dashboard");
 
     private void btnDataKelasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDataKelasActionPerformed
         // TODO add your handling code here:
-        tampilPanel("");
+        tampilPanel("kelas");
     }//GEN-LAST:event_btnDataKelasActionPerformed
 
     private void btnDashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDashboardActionPerformed
