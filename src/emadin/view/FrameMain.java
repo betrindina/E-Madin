@@ -22,6 +22,7 @@ PanelDataSantri dataSantri = new PanelDataSantri();
 PanelAbsensiSantri absensiSantri = new PanelAbsensiSantri();
 PanelDataGuru dataguru = new PanelDataGuru();
 PanelDataKelas dataKelas = new PanelDataKelas();
+PanelJadwalKegiatan jadwalKegiatan = new PanelJadwalKegiatan();
 
 // Memasukkan panel ke pContent
 pContent.add(dashboard, "dashboard");
@@ -29,6 +30,7 @@ pContent.add(dataSantri, "santri");
 pContent.add(absensiSantri, "absensiSantri");
 pContent.add(dataguru, "dataguru");
 pContent.add(dataKelas, "kelas");
+pContent.add(jadwalKegiatan,"jadwalKegiatan");
 // Tampilan awal
 tampilPanel("dashboard");
     }
@@ -98,6 +100,7 @@ tampilPanel("dashboard");
         btnDashboard.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnDashboard.setIconTextGap(15);
         btnDashboard.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDashboard.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Dashboard On.png"))); // NOI18N
         btnDashboard.addActionListener(this::btnDashboardActionPerformed);
 
         btnDataSantri.setBackground(new java.awt.Color(1, 87, 51));
@@ -110,6 +113,7 @@ tampilPanel("dashboard");
         btnDataSantri.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnDataSantri.setIconTextGap(15);
         btnDataSantri.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDataSantri.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Santri On.png"))); // NOI18N
         btnDataSantri.addActionListener(this::btnDataSantriActionPerformed);
 
         btnDataKelas.setBackground(new java.awt.Color(1, 87, 51));
@@ -122,6 +126,7 @@ tampilPanel("dashboard");
         btnDataKelas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnDataKelas.setIconTextGap(15);
         btnDataKelas.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDataKelas.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Kelas On.png"))); // NOI18N
         btnDataKelas.addActionListener(this::btnDataKelasActionPerformed);
 
         btnDataGuru.setBackground(new java.awt.Color(1, 87, 51));
@@ -134,6 +139,7 @@ tampilPanel("dashboard");
         btnDataGuru.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnDataGuru.setIconTextGap(15);
         btnDataGuru.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnDataGuru.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Data Guru On.png"))); // NOI18N
         btnDataGuru.addActionListener(this::btnDataGuruActionPerformed);
 
         btnIdCard.setBackground(new java.awt.Color(1, 87, 51));
@@ -146,6 +152,7 @@ tampilPanel("dashboard");
         btnIdCard.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnIdCard.setIconTextGap(15);
         btnIdCard.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnIdCard.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon ID CARD On.png"))); // NOI18N
 
         btnJadwalKegiatan.setBackground(new java.awt.Color(1, 87, 51));
         ButtonSidebarGroup.add(btnJadwalKegiatan);
@@ -157,6 +164,7 @@ tampilPanel("dashboard");
         btnJadwalKegiatan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnJadwalKegiatan.setIconTextGap(15);
         btnJadwalKegiatan.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnJadwalKegiatan.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Jadwal Kegiatan On.png"))); // NOI18N
         btnJadwalKegiatan.addActionListener(this::btnJadwalKegiatanActionPerformed);
 
         btnAbsensiSantri.setBackground(new java.awt.Color(1, 87, 51));
@@ -169,6 +177,7 @@ tampilPanel("dashboard");
         btnAbsensiSantri.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnAbsensiSantri.setIconTextGap(15);
         btnAbsensiSantri.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnAbsensiSantri.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Absensi Santri On.png"))); // NOI18N
         btnAbsensiSantri.addActionListener(this::btnAbsensiSantriActionPerformed);
 
         btnLaporan.setBackground(new java.awt.Color(1, 87, 51));
@@ -181,6 +190,7 @@ tampilPanel("dashboard");
         btnLaporan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnLaporan.setIconTextGap(15);
         btnLaporan.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnLaporan.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Laporan On.png"))); // NOI18N
 
         jPanel4.setBackground(new java.awt.Color(1, 87, 51));
         jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(255, 255, 255)));
@@ -195,6 +205,7 @@ tampilPanel("dashboard");
         btnPengaturan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnPengaturan.setIconTextGap(15);
         btnPengaturan.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnPengaturan.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Pengaturan On.png"))); // NOI18N
 
         btnManajemenPengguna.setBackground(new java.awt.Color(1, 87, 51));
         ButtonSidebarGroup.add(btnManajemenPengguna);
@@ -206,6 +217,7 @@ tampilPanel("dashboard");
         btnManajemenPengguna.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnManajemenPengguna.setIconTextGap(15);
         btnManajemenPengguna.setPreferredSize(new java.awt.Dimension(188, 34));
+        btnManajemenPengguna.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emadin/asset/Icon Manajemen Pengguna On.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
